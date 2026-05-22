@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define PI 3.1415
+int main()
+{
+    // Faça um programa que leia dois números reais, um será o valor de um produto e outro o valor de desconto que esse produto
+    // está recebendo. Imprima quantos reais o produto custa na promoção
+
+    float vlr_prod, vlr_desc, vlr_final;
+    printf("Digite o valor do produto: ");
+    scanf("%f", &vlr_prod);
+    printf("Digite o valor do desconto: ");
+    scanf("%f", &vlr_desc);
+    vlr_final = vlr_prod - vlr_desc;
+    printf("O valor do produto em promocao e: %.2f", vlr_final);
+
+    return 0;
+}

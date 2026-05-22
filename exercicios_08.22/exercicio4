@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define PI 3.1415
+int main()
+{ // leia o valor total devido por um cliente, quantidade de dias de atraso e percentual de multa por dia de atraso.
+    // Aplique a porcentagem de multa pelo atraso do pagamento e imprima o valor total devido.
+
+    float valor_devido, multa, valor_final, porc;
+    int qtd_dias;
+    printf("Digite o valor devido: ");
+    scanf("%f", &valor_devido);
+    printf("Digite os dias de atraso: ");
+    scanf("%d", &qtd_dias);
+    printf("Digite a porcentagem da multa: ");
+    scanf("%f", &porc);
+    multa = valor_devido * (qtd_dias * (porc / 100));
+    valor_final = valor_devido + multa;
+    printf("O valor total devido e: %.2f reais", valor_final);
+
+    return 0;
+}

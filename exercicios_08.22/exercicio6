@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define PI 3.1415
+int main()
+{
+    // calcular a taxa de serviço do garçom, a partir da entrada do valor da conta. A taxa de serviço é fixa em 10%.
+    // O sistema deverá escrever na tela o valor da taxa de serviço e depois o valor total a ser pago.
+
+    float vlr_conta, vlr_total, vlr_taxa, taxa;
+    taxa = 0.1;
+    printf("Digite o valor da conta: ");
+    scanf("%f", &vlr_conta);
+    vlr_taxa = vlr_conta * taxa;
+    vlr_total = vlr_conta + vlr_taxa;
+    printf("O valor da taxa e de: %.2f e o valor total da conta e de: %.2f", vlr_taxa, vlr_total);
+
+    return 0;
+}

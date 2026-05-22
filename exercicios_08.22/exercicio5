@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define PI 3.1415
+int main()
+{
+    // Sabe-se que, para iluminar de maneira correta os cômodos de uma casa, para cada m² deve-se usar 18W de potência.
+    // Faça um programa que recebe as duas dimensões de um cômodo (em metros), calcule e mostre a sua área (em m²) e a potência
+    // de iluminação em watts que deverá ser usada
+
+    float altura, largura, area, potencia;
+    printf("Digite o valor da altura: ");
+    scanf("%f", &altura);
+    printf("Digite o valor da largura: ");
+    scanf("%f", &largura);
+    area = altura * largura;
+    potencia = area * 18;
+    printf("O comodo tem %.2f metros e a potencia de iluminacao sera: %.2f", area, potencia);
+
+    return 0;
+}

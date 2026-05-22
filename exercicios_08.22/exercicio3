@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define PI 3.1415
+int main()
+{
+    // Calcular o aumento que será dado a um funcionário, obtendo do usuário as seguintes informações: salário atual e a porcentagem de
+    // aumento. Apresentar o novo valor do salário e o valor do aumento
+
+    float salario_atual, salario_novo, porcentagem_aumento, valor_aumento;
+    printf("Digite o valor do salario atual: ");
+    scanf("%f", &salario_atual);
+    printf("Digite a porcentagem de aumento: ");
+    scanf("%f", &porcentagem_aumento);
+    valor_aumento = salario_atual * (porcentagem_aumento / 100);
+    salario_novo = salario_atual + valor_aumento;
+    printf("O valor do novo salario e: %.2f e o valor do aumento e: %.2f", salario_novo, valor_aumento);
+
+    return 0;
+}

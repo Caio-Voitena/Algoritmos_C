@@ -1,0 +1,15 @@
+#include <stdio.h>
+// C = ( A + B ) x Bl
+#define PI 3.1415
+int main()
+{
+    float a, b, c;
+    printf("Digite o valor de A: ");
+    scanf("%f", &a);
+    printf("Digite o valor de B: ");
+    scanf("%f", &b);
+    c = (a + b) * b;
+    printf("A vale: %.1f, B vale: %.1f, C vale: %.1f", a, b, c);
+
+    return 0;
+}
